@@ -20,6 +20,17 @@ SET default_tablespace = '';
 
 SET default_table_access_method = heap;
 
+
+DROP DATABASE IF EXISTS bibliotheque;
+CREATE DATABASE bibliotheque;
+
+\c bibliotheque
+
+drop  table  if  exists  Penalites;
+drop  table  if  exists  Emprunts;
+drop  table  if  exists  Membres;
+drop  table  if  exists  Livres;
+
 --
 -- Name: emprunts; Type: TABLE; Schema: public; Owner: postgres
 --
